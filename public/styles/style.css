@@ -1,0 +1,204 @@
+body {
+    background-color: #000000;
+    color: #F0EDCF;
+    font-family: 'Inconsolata', monospace;
+    margin: 0%;
+}
+
+nav {
+    background-color: #5F6F52;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+label {
+    font-size: medium;
+}
+
+input {
+    background-color: #F0EDCF;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+}
+
+textarea {
+    background-color: #F0EDCF;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+}
+
+footer {
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+    padding: 5px;
+}
+
+.title {
+    color: #F0EDCF;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.page-options {
+    margin-right: 50px;
+}
+
+.home-options {
+    color: #F0EDCF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.home-options:hover {
+    background-color: #54614a;
+    border-radius: 5%;
+}
+
+.webpages-titles {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.posts-homepage {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.all-posts {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.created-post {
+    margin: 10px 0px 10px 0px;
+    padding: 15px 15px 15px 0px;
+    box-shadow: 1px 1px 0px 0px #5F6F52;
+    width: 1250px;
+}
+
+.post-description {
+    text-align: justify;
+}
+
+.read-more-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post-creation {
+    margin-left: 50px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.edit-dlt-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.edit {
+    padding: 10px;
+}
+
+.delete {
+    padding: 10px;
+}
+
+.btn {
+    color: #000000;
+    font-size: medium;
+    font-family: 'Inconsolata', monospace;
+    background-color: #F0EDCF;
+    padding: 2.5px 5px 2.5px 5px;
+}
+
+.btn:hover {
+    background-color: #5F6F52;
+    color: #F0EDCF;
+    cursor: pointer;
+}
+
+
+.social-logo {
+    margin: 0px 10px 0px 10px;
+}
+
+@media (max-width: 576px) {
+    nav {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    textarea {
+        width: 312px;
+        height: 400px;
+    }
+
+    .page-title {
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    .website-logo {
+        width: 30px;
+    }
+
+    .title {
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
+    .page-options {
+        margin-right: 20px;
+        margin-left: 5px;
+    }
+
+    .home-options {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .edit-dlt-buttons {
+        justify-content: center;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .edit {
+        margin-right: 7.5px;
+    }
+
+    .delete {
+        margin-left: 7.5px;
+    }
+
+    .post {
+        text-align: center;
+        margin-left: -50px;
+    }
+
+    .save {
+        text-align: center;
+        margin-left: -50px;
+    }
+}

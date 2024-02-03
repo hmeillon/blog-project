@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+<%# This is the page that will render when the user click the Read more button, it will show all the information but also, the edit and delete button. %>
+<main>
+    <h2 class="webpages-titles"><%= post.title %></h2>
+    <p class="webpages-titles"><%= post.description %></p>
+    <h4 class="webpages-titles"><%= post.author %></h4>
+    <p class="webpages-titles"><%= post.date %></p>
+    <br>
+
+    <div class="edit-dlt-buttons">
+    <%# This button that redirect to /posts/post.title/edit, passing the hidden ID to make it more dynamic. %>
+        <div class="edit">
+            <form id="edit-form" action="/posts/<%= post.title %>/edit" method="POST">
+                <input type="hidden" name="postId" value="<%= post.id %>">
+                <button type="submit" class="btn">Edit post</button>
+            </form>
+        </div>
+    
+    <%# This button that redirect to /posts/delete, passing the hidden ID to make the deletion easier. %>
+        <div class="delete">
+            <form id="delete-form" action="/posts/delete" method="POST">
+                <input type="hidden" name="postId" value="<%= post.id %>">
+                <button type="submit" class="btn">Delete post</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<%- include("partials/footer.ejs") %>

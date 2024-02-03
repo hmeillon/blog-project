@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+    <div class="webpages-titles"><h2>Write a Post</h2></div>
+    <div class="post-creation">
+        <form action="/submit" method="POST">
+            <div class="post-content">
+                <label for="title">Title</label>
+                <br>
+                <input type="text" name="title" required>
+            </div>
+            <div class="post-content">
+                <label for="description">Description</label>
+                <br>
+                <textarea name="description" cols="70" rows="15" required></textarea>
+            </div>
+            <div class="post-content">
+                <label for="author">Author</label>
+                <br>
+                <input type="text" name="author" required>
+            </div>
+            <br>
+            <div class="post">
+                <input type="submit" value="Post" class="btn">
+            </div>
+          </form>
+    </div>
+</main>
+
+<%- include("partials/footer.ejs") %>
